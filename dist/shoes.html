@@ -31,6 +31,31 @@
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
+			<script>
+				(function(h,o,u,n,d) {
+					h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+					d=o.createElement(u);d.async=1;d.src=n
+					n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+				})(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js','DD_RUM')
+				window.DD_RUM.onReady(function() {
+					window.DD_RUM.init({
+						clientToken: 'pub13478b9d9e4e2f62c1ed20ad473b1f1c',
+						applicationId: '1ad47b6f-be1d-4990-8136-b3500e0b276a',
+						// `site` refers to the Datadog site parameter of your organization
+						// see https://docs.datadoghq.com/getting_started/site/
+						site: 'datadoghq.com',
+						service: 'mi-app-testing-pepe',
+						env: 'QA',
+						// Specify a version number to identify the deployed version of your application in Datadog
+						version: '1.0.0',
+						sessionSampleRate: 0,
+						sessionReplaySampleRate: 0,
+						defaultPrivacyLevel: 'mask-user-input',
+					});
+				})
+			</script>
    </head>
    <!-- body -->
    <body class="main-layout">
