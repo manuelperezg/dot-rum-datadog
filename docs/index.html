@@ -60,7 +60,8 @@
 								<a class="nav-item nav-link" href="shoes.html">Shoes</a>
 								<a class="nav-item nav-link" href="racing_boots.html">Racing Boots</a>
 								<a class="nav-item nav-link" href="contact.html">Contact</a>
-								<a class="nav-item nav-link last" href="https://www.doters.com/" target="_blank"><img src="images/search_icon.png"></a>
+								<a class="nav-item nav-link last" href="https://www.doters.com/" target="_blank"><img
+										src="images/search_icon.png"></a>
 								<a class="nav-item nav-link last" href="contact.html"><img src="images/shop_icon.png"></a>
 							</div>
 						</div>
@@ -96,7 +97,7 @@
 												<h1 class="mens_text"><strong>Men's Like Plex</strong></h1>
 												<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 													incididunt ut labore et dolore magna aliqua.</p>
-												<button class="buy_bt"> <a href="https://www.doters.com/" target="_blank">  Buy Now </a></button>
+												<button class="buy_bt"> <a href="https://www.doters.com/" target="_blank"> Buy Now </a></button>
 												<button class="more_bt">See More</button>
 											</div>
 										</div>
@@ -523,9 +524,9 @@
 	<script src="js/custom.js"></script>
 	<!-- javascript -->
 	<script src="js/owl.carousel.js"></script>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-	
+
 	<script>
 		$(document).ready(function () {
 			$(".fancybox").fancybox({
@@ -561,28 +562,29 @@
 	</script>
 
 	<script>
-				(function(h,o,u,n,d) {
-					h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
-					d=o.createElement(u);d.async=1;d.src=n
-					n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-				})(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js','DD_RUM')
-				window.DD_RUM.onReady(function() {
-					window.DD_RUM.init({
-						clientToken: 'pub13478b9d9e4e2f62c1ed20ad473b1f1c',
-						applicationId: '1ad47b6f-be1d-4990-8136-b3500e0b276a',
-						// `site` refers to the Datadog site parameter of your organization
-						// see https://docs.datadoghq.com/getting_started/site/
-						site: 'datadoghq.com',
-						service: 'mi-app-testing-pepe',
-						env:'qa',
-						// Specify a version number to identify the deployed version of your application in Datadog
-						version: '1.0.0',
-						sessionSampleRate: 100,
-						sessionReplaySampleRate: 0,
-						defaultPrivacyLevel: 'mask-user-input',
-					});
-				})
-			</script>
+			(function (h, o, u, n, d) {
+				h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+				d = o.createElement(u); d.async = 1; d.src = n
+				n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+			})(window, document, 'script', 'https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js', 'DD_RUM')
+		window.DD_RUM.onReady(function () {
+			window.DD_RUM.init({
+				clientToken: 'pub13478b9d9e4e2f62c1ed20ad473b1f1c',
+				applicationId: '1ad47b6f-be1d-4990-8136-b3500e0b276a',
+				site: 'datadoghq.com',
+				service: 'mi-app-testing-pepe',
+				env: 'qa',
+				version: '1.0.1',
+				sessionSampleRate: 100,
+				sessionReplaySampleRate: 0,
+				defaultPrivacyLevel: 'mask-user-input',
+				trackResources: true,
+				trackLongTasks: true,
+				trackUserInteractions: true,
+				trackUserInteractions: true
+			});
+		})
+	</script>
 </body>
 
 </html>

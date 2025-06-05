@@ -232,16 +232,17 @@
 			window.DD_RUM.init({
 				clientToken: 'pub13478b9d9e4e2f62c1ed20ad473b1f1c',
 				applicationId: '1ad47b6f-be1d-4990-8136-b3500e0b276a',
-				// `site` refers to the Datadog site parameter of your organization
-				// see https://docs.datadoghq.com/getting_started/site/
 				site: 'datadoghq.com',
 				service: 'mi-app-testing-pepe',
-				env:'qa',
-				// Specify a version number to identify the deployed version of your application in Datadog
-				version: '1.0.0',
+				env: 'qa',
+				version: '1.0.1',
 				sessionSampleRate: 100,
 				sessionReplaySampleRate: 0,
 				defaultPrivacyLevel: 'mask-user-input',
+				trackResources: true,
+				trackLongTasks: true,
+				trackUserInteractions: true,
+				trackUserInteractions: true
 			});
 		})
 	</script>
